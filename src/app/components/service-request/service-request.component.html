@@ -1,1 +1,51 @@
-<p>service-request works!</p>
+<form [formGroup]="programForm" class="pt-5">
+    <div class="container-fluid">
+        <h4 class="text-center py-3">Service Request Form</h4>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <label>Name</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="John Alison" formControlName="name">
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <label>Contact</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="+923312737076" formControlName="contact">
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <app-categories-form-component></app-categories-form-component>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="form-group">
+                            <label>Select Package</label>
+                            <select class="form-control" formControlName="package">
+                              <option value={{item.id}} *ngFor="let item of packages">{{item.name}}</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <label>Service Date</label>
+                        <div class="form-group">
+                            <input type="date" class="form-control" formControlName="serviceDate">
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <div class="form-group">
+                            <label>Payment Method</label>
+                            <select class="form-control" formControlName="payment">
+                              <option value={{item.id}} *ngFor="let item of payments">{{item.name}}</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="col-12 pt-3 text-center">
+                        <button class="btn btn-block btn-primary">Request Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
