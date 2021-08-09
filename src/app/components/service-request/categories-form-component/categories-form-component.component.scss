@@ -1,0 +1,24 @@
+.categories {
+    display: flex;
+    justify-content: space-between;
+    .category {
+        cursor: pointer;
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 4px solid #e9ecef;
+        }
+        p {
+            text-align: center;
+            padding-top: 10px;
+        }
+        &.selected {
+            img {
+                border: 4px solid #0eae64;
+            }
+        }
+    }
+}

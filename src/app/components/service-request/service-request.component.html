@@ -17,7 +17,7 @@
                         </div>
                     </div>
                     <div class="col-12 pt-3">
-                        <app-categories-form-component></app-categories-form-component>
+                        <app-categories-form-component formControlName="category"></app-categories-form-component>
                     </div>
                     <div class="col-12 pt-3">
                         <div class="form-group">
@@ -42,7 +42,7 @@
                           </div>
                     </div>
                     <div class="col-12 pt-3 text-center">
-                        <button class="btn btn-block btn-primary">Request Now</button>
+                        <button class="btn btn-block btn-primary" (click)="submitRequest()">Request Now</button>
                     </div>
                 </div>
             </div>

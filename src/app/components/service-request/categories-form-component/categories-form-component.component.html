@@ -1,1 +1,11 @@
-<p>categories-form-component works!</p>
+<label class="mb-2">Select Category</label>
+<div class="categories">
+    <div class="category"
+        [ngClass]="{'selected': category.id == selected}"
+        *ngFor="let category of categories" 
+        (click)="selectCategory(category.id)"
+    >
+        <img src="{{category.image}}" alt="category">
+        <p>{{category.name}}</p>
+    </div>
+</div>

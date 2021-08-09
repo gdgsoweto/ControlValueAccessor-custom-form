@@ -41,4 +41,8 @@ export class ServiceRequestComponent implements OnInit {
     });
   }
 
+  submitRequest() {
+    console.log(this.programForm.value);
+  }
+
 }
