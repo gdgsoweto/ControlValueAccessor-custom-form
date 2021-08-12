@@ -16,10 +16,10 @@ const CATEGORY_CONTROL_VALUE_ACCESSOR: Provider = {
 export class CategoriesFormComponentComponent implements ControlValueAccessor {
 
   categories = [
-    { id: 'mini', name: 'Mini Size', image: 'https://imgd.aeplcdn.com/0x0/cw/ec/34290/Mini-Countryman-Exterior-127009.jpg' },
-    { id: 'suv', name: 'SUV', image: 'https://imgd.aeplcdn.com/0x0/cw/ec/34290/Mini-Countryman-Exterior-127009.jpg' },
-    { id: 'mini-van', name: 'Mini Van', image: 'https://imgd.aeplcdn.com/0x0/cw/ec/34290/Mini-Countryman-Exterior-127009.jpg' },
-    { id: 'cruiser', name: 'Cruiser', image: 'https://imgd.aeplcdn.com/0x0/cw/ec/34290/Mini-Countryman-Exterior-127009.jpg' },
+    { id: 'mini', name: 'Mini Size', image: 'https://i.ibb.co/vj329kZ/rChubG.png' },
+    { id: 'suv', name: 'SUV', image: 'https://i.ibb.co/h88VZTM/JsfpET.png' },
+    { id: 'mini-van', name: 'Mini Van', image: 'https://i.ibb.co/QMcBNMN/IdtFPA.png' },
+    { id: 'cruiser', name: 'Cruiser', image: 'https://i.ibb.co/TcMkQDr/YgdsLq.png' },
   ];
 
   selected: string = this.categories[0].id;

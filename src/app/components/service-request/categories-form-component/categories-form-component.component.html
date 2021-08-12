@@ -5,6 +5,7 @@
         *ngFor="let category of categories" 
         (click)="selectCategory(category.id)"
     >
+        <i class="fas fa-check-circle" *ngIf="category.id == selected"></i>
         <img src="{{category.image}}" alt="category">
         <p>{{category.name}}</p>
     </div>
